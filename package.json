@@ -42,6 +42,8 @@
     "eslint-plugin-import": "^1.8.0",
     "eslint-plugin-jsx-a11y": "^1.2.2",
     "eslint-plugin-react": "^5.1.1",
+    "fetch-mock": "^5.12.2",
+    "history": "^4.7.2",
     "jest": "^20.0.4",
     "mocha": "^2.4.5",
     "mocha-loader": "^0.7.1",
@@ -50,6 +52,9 @@
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.6",
     "react-test-renderer": "^15.5.4",
     "redux": "^3.7.2",
     "redux-devtools": "^3.4.0",
@@ -57,5 +62,10 @@
     "style-loader": "^0.13.1",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "history": "^4.7.2",
+    "react-router": "^4.2.0",
+    "react-router-redux": "^5.0.0-alpha.6"
   }
 }
