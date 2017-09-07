@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/turingschool-examples/react-starter-kit",
   "devDependencies": {
+    "await-loader": "0.0.2",
     "babel": "^6.5.2",
     "babel-core": "^6.24.1",
     "babel-eslint": "^6.0.4",
