@@ -69,6 +69,7 @@
   "dependencies": {
     "firebase": "^4.3.0",
     "history": "^4.7.2",
+    "moment": "^2.18.1",
     "react-router": "^4.2.0",
     "react-router-redux": "^5.0.0-alpha.6"
   }
