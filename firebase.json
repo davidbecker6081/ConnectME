@@ -1,6 +1,9 @@
 {
   "database": {
-    "rules": "y"
+    "rules": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    }
   },
   "hosting": {
     "public": "build",
