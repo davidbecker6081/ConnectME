@@ -1,0 +1,44 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.nav-logo {
+  height: 120px;
+  width: 120px;
+}
+
+h1 {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.connect-me {
+
+}
+
+.navlink-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  width: 30%;
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-between;
+  width:
+}
+
+.navlink-img {
+  margin-right: 5px;
+  height: 25px;
+  width: 25px;
+}
+
+.Link {
+  color: #FFF;
+  font-size: 22px;
+  text-decoration: none;
+}
