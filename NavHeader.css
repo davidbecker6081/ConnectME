@@ -1,12 +1,12 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
+  padding: 20px 10px 0 30px;
 }
 
 .nav-logo {
-  height: 120px;
-  width: 120px;
+  height: 140px;
+  width: 140px;
 }
 
 h1 {
@@ -15,7 +15,7 @@ h1 {
 }
 
 .connect-me {
-
+  height: 100px;
 }
 
 .navlink-container {
@@ -27,18 +27,37 @@ h1 {
 
 .link-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  width:
+  padding-bottom: 60px;
 }
 
 .navlink-img {
   margin-right: 5px;
-  height: 25px;
-  width: 25px;
+  height: 45px;
+  width: 45px;
 }
 
 .Link {
+  height: fit-content;
   color: #FFF;
-  font-size: 22px;
+  font-size: 30px;
   text-decoration: none;
+}
+
+.Link:hover {
+  cursor: pointer;
+}
+
+.login-link:hover {
+  color: #fd6c21;
+}
+
+.friends-link:hover {
+  color: #fc1e4c;
+}
+
+.message-link:hover {
+  color: #ae0c62;
+
 }
