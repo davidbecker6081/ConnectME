@@ -8,6 +8,7 @@
 
 h3 {
   margin-top: 0;
+  margin-bottom: 20px;
   padding-bottom: 10px;
   width: 100%;
   display: flex;
@@ -72,19 +73,6 @@ input.search-input {
   padding: 5px 0;
 }
 
-.friend-list-headers {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px 0 35px;
-  color: #FF5F00;
-  font-size: 20px;
-}
-
-.friend-list-headers span {
-  /*border-bottom: 1px solid #FF5F00;*/
-
-}
-
 .photo-name-container {
   display: flex;
   flex-direction: column;
@@ -117,4 +105,5 @@ input.search-input {
   color: #FFF;
   font-size: 15px;
   padding: 10px;
+  outline: none;
 }
