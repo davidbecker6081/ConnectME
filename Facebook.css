@@ -1,0 +1,109 @@
+.friend-message-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  padding: 0 50px;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  color: #FFF;
+  border-bottom: 2px solid rgba(255,255,255,0.5);
+}
+
+.friend-list-container {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  padding: 20px;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.50);
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.search-friends-btn {
+  border: none;
+  background-color: #FF5F00;
+  color: #FFF;
+  font-size: 22px;
+  width: 25%;
+  height: 50px;
+  border-left: 3px solid #FFF;
+  outline-style: none;
+}
+
+.search-friends-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+input.search-input {
+  width: 75%;
+  margin-bottom: 0;
+}
+
+.friend-list {
+  height: 40vh;
+  list-style: none;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.friend-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #FF5F00;
+  padding: 5px 0;
+}
+
+.photo-name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+.friend-photo {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.friend-name {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.friend-location {
+  margin: 0;
+  font-size: 20px;
+  color: #fc1d4c;
+}
+
+.friend-btn {
+  border: none;
+  background-color: #ae0c62;
+  color: #FFF;
+  font-size: 15px;
+  padding: 10px;
+  outline: none;
+}

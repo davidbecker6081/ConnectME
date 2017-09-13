@@ -1,0 +1,66 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 0 30px;
+}
+
+.nav-logo {
+  height: 140px;
+  width: 140px;
+}
+
+h1 {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.connect-me {
+  height: 100px;
+}
+
+.navlink-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  width: 30%;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+
+.navlink-img {
+  margin-right: 5px;
+  height: 45px;
+  width: 45px;
+}
+
+.profile-photo {
+  border-radius: 50%;
+}
+
+.Link {
+  height: fit-content;
+  color: #FFF;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.Link:hover {
+  cursor: pointer;
+}
+
+.login-link:hover {
+  color: #fd6c21;
+}
+
+.friends-link:hover {
+  color: #fc1e4c;
+}
+
+.message-link:hover {
+  color: #ae0c62;
+}

@@ -1,0 +1,11 @@
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  background-image: url('assets/Background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

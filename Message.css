@@ -1,0 +1,91 @@
+.messages-wrapper  {
+  height: 60vh;
+  padding: 20px;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.50);
+}
+
+.message-default {
+  margin-top: 170px;
+  font-size: 60px;
+  color: #FF5F00;
+  text-align: center;
+}
+
+.default-message-individual {
+  font-size: 50px;
+  color: #FF5F00;
+}
+
+.message-container {
+  height: 50vh;
+}
+
+.message-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 45vh;
+}
+.message-container  input{
+  font-size: 15px;
+  padding: 5px;
+  width: 65%;
+}
+
+.message-container button {
+  border: none;
+  outline: none;
+  background-color: #FF5F00;
+  color: #FFF;
+  width: 30%;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.message-individual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #FFF;
+  margin-bottom: 2px;
+}
+
+.message-loggedInUser {
+  align-items: flex-end;
+}
+
+.message-otherUser {
+  align-items: flex-start;
+}
+
+.message-sender {
+  margin: 0;
+  margin-bottom: 5px;
+  color: #FFF;
+  font-size: 15px;
+}
+
+.message-text {
+  margin: 0;
+  margin-bottom: 5px;
+  color: #FF5F00;
+
+}
+
+.message-date {
+  margin: 0;
+}
+
+h5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFF;
+  padding: 0 10px;
+  margin: 0 0 5px 0;
+  font-size: 20px;
+}
