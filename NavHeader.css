@@ -38,6 +38,10 @@ h1 {
   width: 45px;
 }
 
+.profile-photo {
+  border-radius: 50%;
+}
+
 .Link {
   height: fit-content;
   color: #FFF;
@@ -59,5 +63,4 @@ h1 {
 
 .message-link:hover {
   color: #ae0c62;
-
 }

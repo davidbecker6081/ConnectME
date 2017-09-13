@@ -1,0 +1,71 @@
+form {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  margin: 80px auto 0 auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.50);
+}
+
+.login-logo {
+  position: relative;
+  bottom: 60px;
+  height: 150px;
+  width: 150px;
+}
+
+.login-title {
+  margin-bottom: 80px;
+  height: 100px;
+}
+
+.username-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+h4 {
+  margin: 0 0 20px 0;
+  font-size: 30px;
+  color: #FF5F00;
+}
+
+.username-input {
+  /*needs light weight font*/
+  margin-bottom: 70px;
+  padding: 5px;
+  font-size: 30px;
+  color: #FF5F00;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #FF5F00;
+  outline-style: none;
+}
+
+.username-input::placeholder {
+  color: #FF5F00;
+  opacity: 0.3;
+}
+
+.login-btn {
+  margin-bottom: 60px;
+  padding-left: 30px;
+  color: #FFF;
+  font-size: 25px;
+  height: 70px;
+  width: 30%;
+  background-image: url('assets/facebook-button.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.50);
+}
+
+.login-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}

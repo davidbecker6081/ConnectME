@@ -1,0 +1,49 @@
+.friend-message-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  padding: 0 50px;
+}
+
+h3 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  color: #FFF;
+  border-bottom: 2px solid rgba(255,255,255,0.5);
+}
+
+.friend-list-container {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  padding: 20px;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.50);
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+}
+
+.search-friends-btn {
+  border: none;
+  background-color: #FF5F00;
+  color: #FFF;
+  font-size: 22px;
+  width: 25%;
+  height: 50px;
+  border-left: 3px solid #FFF;
+}
+
+input.search-input {
+  width: 75%;
+  margin-bottom: 0;
+}
