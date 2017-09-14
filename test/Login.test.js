@@ -76,5 +76,21 @@ describe('Login', () => {
 		expect(wrapper.find('Redirect').length).toEqual(1);
 	});
 
-  
+	it.skip('should change state and storeLoggedInUser if login is called and auth is successful', () => {
+		const expectedInitialState = {
+			username: '',
+		};
+
+		const expectedState = {
+			username: '',
+			user: {},
+		};
+
+		expect(wrapper.state()).toEqual(expectedInitialState);
+
+		wrapper.instance().login();
+
+		expect(storeLoggedInUserData).toHaveBeenCalled();
+		expect(wrapper.state()).toEqual(expectedState);
+	});
 });
