@@ -42,5 +42,24 @@ describe('Message', () => {
 		expect(wrapper.find('li').length).toEqual(1);
 		expect(liElementLoggedIn.props().className).toEqual('message-individual message-loggedInUser');
 	});
-  
+
+	it('should return an h4', () => {
+		expect(wrapper.find('.message-sender').length).toEqual(1);
+	});
+
+	it('should return a p element with class message-text and one with message-date', () => {
+		expect(wrapper.find('p').length).toEqual(2);
+		expect(
+			wrapper
+				.find('p')
+				.at(0)
+				.props().className
+		).toEqual('message-text');
+		expect(
+			wrapper
+				.find('p')
+				.at(1)
+				.props().className
+		).toEqual('message-date');
+	});
 });
