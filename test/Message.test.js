@@ -7,6 +7,7 @@ describe('Message', () => {
 	let wrapper;
 	let message;
 	let loggedInUser;
+	let loggedInUser2;
 
 	beforeEach(() => {
 		message = {
@@ -29,6 +30,13 @@ describe('Message', () => {
 			location: 'Denver, Colorado',
 		};
 
+		loggedInUser2 = {
+			displayName: 'David Becker3',
+			userName: 'dave',
+			photo: 'url.com',
+			location: 'Denver, Colorado',
+		};
+
 		wrapper = shallow(<Message key={1} {...message} loggedInUser={loggedInUser} />);
 	});
 
@@ -41,6 +49,13 @@ describe('Message', () => {
 
 		expect(wrapper.find('li').length).toEqual(1);
 		expect(liElementLoggedIn.props().className).toEqual('message-individual message-loggedInUser');
+	});
+
+	it('should return an li with a classes of message-otherUser and message-individual', () => {
+		wrapper = shallow(<Message key={1} {...message} loggedInUser={loggedInUser2} />);
+		const liElementLoggedIn = wrapper.find('li').at(0);
+
+		expect(liElementLoggedIn.props().className).toEqual('message-individual message-otherUser');
 	});
 
 	it('should return an h4', () => {
