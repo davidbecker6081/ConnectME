@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import FriendList from '../lib/components/FriendList';
 import { shallow, mount } from 'enzyme';
 import MessageContainer from '../lib/containers/MessageContainer';
+import fetchMock from 'fetch-mock';
+import friendListMock from '../__mock__/friendListMock';
 
 describe('FriendList', () => {
 	let wrapper;
@@ -63,6 +65,10 @@ describe('FriendList', () => {
 				messageFriend={messageFriend}
 			/>
 		);
+	});
+
+	afterEach(() => {
+		fetchMock.restore();
 	});
 
 	it('should exist', () => {
@@ -160,5 +166,22 @@ describe('FriendList', () => {
 
 	it('should return the correct amount of Friend components per the friends in store', () => {
 		expect(wrapper.find('Friend').length).toEqual(3);
+	});
+
+	it('should fetch friend data when fetchFriends is called', () => {
+		fetchMock.get(
+			'https://graph.facebook.com/v2.10/10152786482452059?fields=about,name,hometown,location,email,friends.limit(200){name,hometown,location,about,picture{url}}&access_token=EAACEdEose0cBAPj7cFySqAZBBLxYIOfi0XVAG1aZAUVP2ZCdyZCGnxCg92zQAMoMuWMP6y6UYijRJTWby0ifT7e3LSMgw2Gga8FcNLjuscFZAoXRfzndVgAyZBUfmXfsbl1LJYkL7b2JwshzKtPk7JO68AkXLqgxT9e8JUgQRXFzWfePWwVzJQK6crR5jLqUAZD',
+			{ status: 200, body: friendListMock }
+		);
+
+		wrapper.instance().fetchFriends();
+		wrapper.update();
+		expect(fetchMock.called()).toEqual(true);
+		expect(
+			fetchMock.called(
+				'https://graph.facebook.com/v2.10/10152786482452059?fields=about,name,hometown,location,email,friends.limit(200){name,hometown,location,about,picture{url}}&access_token=EAACEdEose0cBAPj7cFySqAZBBLxYIOfi0XVAG1aZAUVP2ZCdyZCGnxCg92zQAMoMuWMP6y6UYijRJTWby0ifT7e3LSMgw2Gga8FcNLjuscFZAoXRfzndVgAyZBUfmXfsbl1LJYkL7b2JwshzKtPk7JO68AkXLqgxT9e8JUgQRXFzWfePWwVzJQK6crR5jLqUAZD'
+			)
+		);
+		expect(fetchMock._matchedCalls.length).toEqual(1);
 	});
 });
