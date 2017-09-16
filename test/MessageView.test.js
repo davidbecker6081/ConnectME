@@ -171,7 +171,7 @@ describe('MessageView', () => {
 				retrieveMessagesFromFirebase={retrieveMessagesFromFirebase}
 			/>
 		);
-    expect(wrapper.props().messages.length).toEqual(0)
+		expect(wrapper.props().messages.length).toEqual(0);
 		expect(wrapper.find('.default-message-individual').length).toEqual(1);
 	});
 
