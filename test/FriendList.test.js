@@ -122,7 +122,7 @@ describe('FriendList', () => {
 		expect(fetchFriends).toHaveBeenCalled();
 	});
 
-	it.skip('should call renderFriends when component mounts', () => {
+	it('should call renderFriends when component mounts', () => {
 		const renderFriends = jest.fn();
 
 		expect(wrapper.find('.friend-list').length).toEqual(1);
@@ -183,7 +183,7 @@ describe('FriendList', () => {
 			)
 		);
 		expect(fetchMock._matchedCalls.length).toEqual(1);
-		expect(fetchMock.routes[0].method).toEqual('GET')
-		expect(fetchMock.routes[0].response.body).toEqual(friendListMock)
+		expect(fetchMock.routes[0].method).toEqual('GET');
+		expect(fetchMock.routes[0].response.body).toEqual(friendListMock);
 	});
 });
