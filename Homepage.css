@@ -1,0 +1,28 @@
+.homepage {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 40%;
+  margin: 80px auto 0 auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 40px;
+  font-size: 80px;
+  color: #FFF;
+  text-align: center;
+}
+
+.homepage-link-login {
+  text-decoration: none;
+  font-size: 70px;
+  color: #FF5F00;
+  border: 2px solid #FF5F00;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+.homepage-logo {
+  height: 250px;
+  width: 250px;
+}

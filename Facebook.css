@@ -105,3 +105,24 @@ input.search-input {
   width: 20%;
   outline: none;
 }
+
+div.display-center {
+  justify-content: center;
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    justify-content: space-between;
+    opacity: 1;
+  }
+}
+
+div.transition1 {
+  animation: slideLeft 1s ;
+}
