@@ -25,7 +25,7 @@ h3 {
   padding: 20px;
   width: 40%;
   background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.50);
+  /*box-shadow: 0 3px 4px 0 rgba(0,0,0,0.50);*/
 }
 
 .search-container {
@@ -67,35 +67,32 @@ input.search-input {
 .friend-list li {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   margin-bottom: 20px;
   border-bottom: 1px solid #FF5F00;
   padding: 5px 0;
 }
 
-.photo-name-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 25%;
-}
-
 .friend-photo {
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  margin-right: 5%;
+  height: 70px;
+  width: 70px;
+}
+
+.name-location-container{
+  margin-right: 20%;
 }
 
 .friend-name {
   margin: 0;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
 }
 
 .friend-location {
   margin: 0;
-  font-size: 20px;
+  font-size: 28px;
   color: #fc1d4c;
 }
 
@@ -103,7 +100,8 @@ input.search-input {
   border: none;
   background-color: #ae0c62;
   color: #FFF;
-  font-size: 15px;
-  padding: 10px;
+  font-size: 30px;
+  padding: 16px;
+  width: 20%;
   outline: none;
 }
