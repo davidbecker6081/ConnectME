@@ -6,14 +6,14 @@ form {
   width: 40%;
   margin: 80px auto 0 auto;
   background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.50);
+  padding: 40px;
+  /*box-shadow: 0 3px 4px 0 rgba(0,0,0,0.50);*/
 }
 
 .login-logo {
-  position: relative;
-  bottom: 60px;
   height: 150px;
   width: 150px;
+  margin-bottom: 40px;
 }
 
 .login-title {
@@ -29,7 +29,7 @@ form {
 
 h4 {
   margin: 0 0 20px 0;
-  font-size: 30px;
+  font-size: 45px;
   color: #FF5F00;
 }
 
@@ -37,7 +37,7 @@ h4 {
   /*needs light weight font*/
   margin-bottom: 70px;
   padding: 5px;
-  font-size: 30px;
+  font-size: 35px;
   color: #FF5F00;
   background: none;
   border: none;
@@ -47,22 +47,22 @@ h4 {
 
 .username-input::placeholder {
   color: #FF5F00;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .login-btn {
   margin-bottom: 60px;
   padding-left: 30px;
   color: #FFF;
-  font-size: 25px;
-  height: 70px;
-  width: 30%;
+  font-size: 40px;
+  height: 90px;
+  width: 45%;
   background-image: url('assets/facebook-button.png');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   border: none;
-  box-shadow: 0 3px 4px 0 rgba(0,0,0,0.50);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.50);
 }
 
 .login-btn:hover {
