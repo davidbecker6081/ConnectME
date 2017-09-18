@@ -1,0 +1,68 @@
+.homepage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.friends-teaser,
+.messages-teaser,
+.homepage {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 30%;
+  margin: 80px auto 0 auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 40px;
+  font-size: 80px;
+  color: #FFF;
+  text-align: center;
+}
+
+.homepage {
+  height: 35vh;
+  width: 25%;
+  padding: 20px;
+  font-size: 50px;
+}
+
+.homepage-link-login {
+  text-decoration: none;
+  font-size: 40px;
+  color: #FF5F00;
+  border: 2px solid #FF5F00;
+  border-radius: 10px;
+  box-shadow: 1px 4px rgba(0,0,0,0.3);
+}
+
+.homepage-link-login:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: none;
+}
+
+.homepage-logo {
+  height: 150px;
+  width: 150px;
+}
+
+.homepage-text {
+  margin: 0;
+}
+
+.teaser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  width: 90%;
+  color: #FFF;
+  text-align: center;
+}
+
+.teaser img {
+  height: 200px;
+  width: 200px;
+}

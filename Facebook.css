@@ -53,7 +53,7 @@ h3 {
 
 input.search-input {
   width: 75%;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .friend-list {
@@ -67,7 +67,7 @@ input.search-input {
 .friend-list li {
   display: flex;
   align-items: center;
-  /*justify-content: space-between;*/
+  justify-content: center;
   margin-bottom: 20px;
   border-bottom: 1px solid #FF5F00;
   padding: 5px 0;
@@ -104,4 +104,25 @@ input.search-input {
   padding: 16px;
   width: 20%;
   outline: none;
+}
+
+div.display-center {
+  justify-content: center;
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    justify-content: space-between;
+    opacity: 1;
+  }
+}
+
+div.transition1 {
+  animation: slideLeft 1s ;
 }
