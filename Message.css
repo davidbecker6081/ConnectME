@@ -45,6 +45,11 @@
   font-size: 20px;
 }
 
+.message-container button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
 .message-individual {
   display: flex;
   flex-direction: column;
