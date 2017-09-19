@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Login from '../lib/components/Login';
 import { shallow, mount } from 'enzyme';
 import { spy } from 'sinon';
+import { makeLogin } from '../__mock__/testMocks';
 
 describe('Login', () => {
 	let wrapper;
-	let storeLoggedInUserData;
-
+	let Login;
 	beforeEach(() => {
-		storeLoggedInUserData = jest.fn();
-		wrapper = shallow(<Login storeLoggedInUserData={storeLoggedInUserData} />);
+		Login = makeLogin()
+		wrapper = shallow(Login);
 	});
 
 	it('should exist', () => {
@@ -90,7 +89,7 @@ describe('Login', () => {
 
 		wrapper.instance().login();
 
-		expect(storeLoggedInUserData).toHaveBeenCalled();
+		expect(Login.storeLoggedInUserData).toHaveBeenCalled();
 		expect(wrapper.state()).toEqual(expectedState);
 	});
 });

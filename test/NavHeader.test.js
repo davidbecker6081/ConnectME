@@ -1,34 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NavHeader from '../lib/components/NavHeader';
 import { shallow, mount } from 'enzyme';
+import { makeNavHeader } from '../__mock__/testMocks';
 
 describe('NavHeader', () => {
 	let wrapper;
-	let loggedInUser;
-	let userDataFacebook;
+	let NavHeader;
 
 	beforeEach(() => {
-		loggedInUser = {
-			displayName: 'David Becker',
-			userName: 'dave',
-			photo: 'url.com',
-			location: 'Denver, Colorado',
-		};
-		userDataFacebook = {
-			hometown: {
-				id: '1',
-				name: 'Memphis, Tennessee',
-			},
-			currentLocation: {
-				id: '2',
-				name: 'Denver, Colorado',
-			},
-			fullName: 'David Becker',
-		};
-		wrapper = shallow(
-			<NavHeader loggedInUser={loggedInUser} userDataFacebook={userDataFacebook} />
-		);
+		NavHeader = makeNavHeader();
+		wrapper = shallow(NavHeader);
 	});
 
 	it('should exist', () => {
