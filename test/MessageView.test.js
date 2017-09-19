@@ -1,89 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MessageView from '../lib/components/MessageView';
 import { shallow, mount } from 'enzyme';
+import { makeMessageView, makeMessageViewNoFriend } from '../__mock__/testMocks';
 
 describe('MessageView', () => {
 	let wrapper;
-	let userDataFacebook;
-	let messageFriendData;
-	let loggedInUser;
-	let messages;
-	let sendMessageToFirebase;
-	let retrieveMessagesFromFirebase;
+	let messageView
 
 	beforeEach(() => {
-		messages = [
-			{
-				recipient: {
-					name: 'David Becker',
-					id: '0000000000',
-				},
-				sender: {
-					name: 'David Becker2',
-					id: '111111111',
-				},
-				message: 'Send a Message to Someone1',
-				date: '2014 March',
-			},
-			{
-				recipient: {
-					name: 'David Becker',
-					id: '0000000000',
-				},
-				sender: {
-					name: 'David Becker2',
-					id: '111111111',
-				},
-				message: 'Send a Message to Someone2',
-				date: '2014 March',
-			},
-			{
-				recipient: {
-					name: 'David Becker2',
-					id: '111111111',
-				},
-				sender: {
-					name: 'David Becker',
-					id: '0000000000',
-				},
-				message: 'Send a Message to Someone3',
-				date: '2014 March',
-			},
-		];
-		userDataFacebook = {
-			hometown: {
-				id: '1',
-				name: 'Memphis, Tennessee',
-			},
-			currentLocation: {
-				id: '2',
-				name: 'Denver, Colorado',
-			},
-			fullName: 'David Becker',
-		};
-		loggedInUser = {
-			displayName: 'David Becker',
-			userName: 'dave',
-			photo: 'url.com',
-			location: 'Denver, Colorado',
-		};
-		messageFriendData = {
-			name: 'Forrest Sansing',
-			id: '562272102',
-		};
-		sendMessageToFirebase = jest.fn();
-		retrieveMessagesFromFirebase = jest.fn();
-
+		messageView = makeMessageView()
 		wrapper = shallow(
-			<MessageView
-				messages={messages}
-				userDataFacebook={userDataFacebook}
-				messageFriendData={messageFriendData}
-				loggedInUser={loggedInUser}
-				sendMessageToFirebase={sendMessageToFirebase}
-				retrieveMessagesFromFirebase={retrieveMessagesFromFirebase}
-			/>
+			messageView
 		);
 	});
 
@@ -127,14 +54,7 @@ describe('MessageView', () => {
 		expect(wrapper.find('.message-default').length).toEqual(0);
 
 		wrapper = shallow(
-			<MessageView
-				messages={messages}
-				userDataFacebook={userDataFacebook}
-				messageFriendData={{}}
-				loggedInUser={loggedInUser}
-				sendMessageToFirebase={sendMessageToFirebase}
-				retrieveMessagesFromFirebase={retrieveMessagesFromFirebase}
-			/>
+			makeMessageViewNoFriend()
 		);
 
 		expect(wrapper.find('.message-default').length).toEqual(1);
@@ -160,23 +80,15 @@ describe('MessageView', () => {
 	});
 
 	it.skip('should return a default message individual if no messages', () => {
-		messages = [];
 		wrapper = mount(
-			<MessageView
-				messages={messages}
-				userDataFacebook={userDataFacebook}
-				messageFriendData={{}}
-				loggedInUser={loggedInUser}
-				sendMessageToFirebase={sendMessageToFirebase}
-				retrieveMessagesFromFirebase={retrieveMessagesFromFirebase}
-			/>
+			makeMessageViewNoFriend()
 		);
 		expect(wrapper.props().messages.length).toEqual(0);
 		expect(wrapper.find('.default-message-individual').length).toEqual(1);
 	});
 
 	it('should render the correct amount of Message components per messages', () => {
-		const expectedMessageLength = messages.length;
+		const expectedMessageLength = 3;
 
 		expect(wrapper.find('Message').length).toEqual(expectedMessageLength);
 	});

@@ -2,25 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Friend from '../lib/components/Friend';
 import { shallow, mount } from 'enzyme';
+import { mockFriend } from '../__mock__/testMocks';
 
 describe('Friend', () => {
 	let wrapper;
-	let mockFnMessage;
-	let mockFriend;
-	let mockFnMessageView;
+	let friend;
 
 	beforeEach(() => {
-		mockFnMessage = jest.fn();
-		mockFnMessageView = jest.fn();
-		mockFriend = {
-			name: 'David Becker',
-			profileImg: 'url.com',
-			currentLocation: 'Denver, Colorado',
-			messageFriend: mockFnMessage,
-			friendId: '1',
-			openMessageView: mockFnMessageView,
-		};
-		wrapper = shallow(<Friend key={9} {...mockFriend} />);
+		friend = mockFriend();
+		wrapper = shallow(<Friend key={9} {...friend} />);
 	});
 
 	it('should exist', () => {
@@ -31,8 +21,8 @@ describe('Friend', () => {
 		expect(wrapper.find('li').length).toEqual(1);
 	});
 
-	it('should return a div with class of photo-name-container', () => {
-		expect(wrapper.find('.photo-name-container').length).toEqual(1);
+	it('should return a div with class of name-location-container', () => {
+		expect(wrapper.find('.name-location-container').length).toEqual(1);
 	});
 
 	it('should return an img and h4 with the correct info', () => {
@@ -71,7 +61,7 @@ describe('Friend', () => {
 
 		button.simulate('click');
 
-		expect(mockFnMessage).toHaveBeenCalled();
-		expect(mockFnMessageView).toHaveBeenCalled();
+		expect(friend.messageFriend).toHaveBeenCalled();
+		expect(friend.openMessageView).toHaveBeenCalled();
 	});
 });
