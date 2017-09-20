@@ -24,3 +24,10 @@ button {
       background-repeat: repeat-y;
   }
 }
+
+@media screen and (max-width: 1100px) {
+
+  body {
+      background-repeat: repeat-y;
+  }
+}

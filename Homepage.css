@@ -81,3 +81,18 @@
   }
 
 }
+
+@media screen and (max-width: 1100px) {
+
+  .friends-teaser,
+  .messages-teaser,
+  .homepage {
+    font-size: 70px;
+  }
+
+  .teaser img {
+    height: 170px;
+    width: 170px;
+  }
+
+}
