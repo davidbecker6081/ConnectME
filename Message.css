@@ -29,7 +29,7 @@
   height: 45vh;
   overflow: auto;
 }
-.message-container  input{
+.message-container input {
   font-size: 20px;
   padding: 5px;
   width: 68%;
@@ -109,4 +109,31 @@ h5 {
 
 .text-date-recipient {
   background-color: rgba(252,30,76,0.2);
+}
+
+@media screen and (max-width: 700px) {
+
+  .default-message-individual {
+    font-size: 45px;
+  }
+
+  .messages-wrapper {
+    height: auto;
+    margin-bottom: 30px;
+    width: 80%;
+  }
+
+  .message-container {
+    height: auto;
+  }
+
+  .message-container input {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .message-container button {
+    width: 93%;
+  }
+
 }

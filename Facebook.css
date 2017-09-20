@@ -126,3 +126,88 @@ div.display-center {
 div.transition1 {
   animation: slideLeft 1s ;
 }
+
+@media screen and (max-width: 700px) {
+
+  .friend-list-container {
+    padding: 15px;
+    width: 45%;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input.search-input {
+    font-size: 25px;
+    width: 95%;
+    margin-bottom: 25px;
+  }
+
+  .search-friends-btn {
+    font-size: 22px;
+    width: 95%;
+    margin-bottom: 10px;
+  }
+
+  .friend-list li {
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 10px;
+  }
+
+  .friend-photo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .name-location-container {
+    justify-content: flex-start;
+    margin-right: 5%;
+    width: 65%;
+  }
+
+  .friend-name {
+    font-size: 20px;
+  }
+
+  .friend-location {
+    font-size: 22px;
+  }
+
+  .friend-btn {
+    font-size: 20px;
+    padding: 10px;
+    width: 80%;
+
+  }
+
+  .friend-name {
+    text-align: left;
+  }
+
+  div.display-center .friend-list-container {
+    width: 80%;
+  }
+
+  .friend-list-container {
+    margin-bottom: 30px;
+    width: 80%;
+  }
+
+  .friend-message-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+
+}

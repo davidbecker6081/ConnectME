@@ -17,3 +17,10 @@ body {
 button {
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+@media screen and (max-width: 700px) {
+
+  body {
+      background-repeat: repeat-y;
+  }
+}

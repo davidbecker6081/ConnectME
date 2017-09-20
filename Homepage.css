@@ -66,3 +66,18 @@
   height: 200px;
   width: 200px;
 }
+
+@media screen and (max-width: 700px) {
+
+  .friends-teaser,
+  .messages-teaser,
+  .homepage {
+    font-size: 50px;
+  }
+
+  .teaser img {
+    height: 150px;
+    width: 150px;
+  }
+
+}
