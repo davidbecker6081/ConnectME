@@ -1,76 +1,130 @@
 form {
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 40%;
-  margin: 80px auto 0 auto;
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 40px;
-  /*box-shadow: 0 3px 4px 0 rgba(0,0,0,0.50);*/
+	height: 60vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 40%;
+	margin: 80px auto 0 auto;
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 40px;
+	/*box-shadow: 0 3px 4px 0 rgba(0,0,0,0.50);*/
 }
 
 .login-logo {
-  height: 150px;
-  width: 150px;
-  margin-bottom: 40px;
+	height: 150px;
+	width: 150px;
+	margin-bottom: 40px;
 }
 
 .login-title {
-  margin-bottom: 80px;
-  height: 100px;
+	margin-bottom: 80px;
+	height: 100px;
 }
 
 .username-container {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
+	display: flex;
+	flex-direction: column;
+	width: 80%;
 }
 
 h4 {
-  margin: 0 0 20px 0;
-  font-size: 45px;
-  color: #FF5F00;
+	margin: 0 0 20px 0;
+	font-size: 45px;
+	color: #ff5f00;
 }
 
 .username-input {
-  /*needs light weight font*/
-  margin-bottom: 70px;
-  padding: 5px;
-  font-size: 35px;
-  color: #FF5F00;
-  background: none;
-  border: none;
-  border-bottom: 2px solid #FF5F00;
-  outline-style: none;
+	/*needs light weight font*/
+	margin-bottom: 70px;
+	padding: 5px;
+	font-size: 35px;
+	color: #ff5f00;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #ff5f00;
+	outline-style: none;
 }
 
 .username-input::placeholder {
-  color: #FF5F00;
-  opacity: 0.4;
+	color: #ff5f00;
+	opacity: 0.4;
 }
 
 .login-btn {
-  margin-bottom: 60px;
-  padding-left: 30px;
-  color: #FFF;
-  font-size: 40px;
-  height: 90px;
-  width: 45%;
-  background-image: url('assets/facebook-button.png');
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: none;
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.50);
+	margin-bottom: 60px;
+	padding-left: 30px;
+	color: #fff;
+	font-size: 40px;
+	height: 90px;
+	width: 45%;
+	background-image: url('assets/facebook-button.png');
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: none;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
 .login-btn:hover {
-  cursor: pointer;
-  opacity: 0.8;
+	cursor: pointer;
+	opacity: 0.8;
 }
 
 .login-btn:disabled {
-  opacity: 0.3;
-  cursor: not-allowed;
+	opacity: 0.3;
+	cursor: not-allowed;
+}
+
+@media screen and (max-width: 700px) {
+	form {
+		width: 80%;
+		padding: 20px;
+	}
+
+	.login-logo {
+		height: 100px;
+		width: 100px;
+		margin-bottom: 30px;
+	}
+
+	.login-title {
+		margin-bottom: 60px;
+		height: 60px;
+	}
+
+	h4 {
+		margin: 0 0 15px 0;
+		font-size: 30px;
+	}
+
+	.username-input {
+		margin-bottom: 60px;
+		padding: 5px;
+		font-size: 25px;
+	}
+
+	.login-btn {
+		margin-bottom: 30px;
+		padding-left: 20px;
+		font-size: 26px;
+		height: 70px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	form {
+		width: 60%;
+	}
+
+	.login-title {
+		height: 75px;
+	}
+
+	.username-input {
+		font-size: 30px;
+	}
+
+	.login-btn {
+		width: 60%;
+	}
 }

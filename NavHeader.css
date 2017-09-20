@@ -64,3 +64,88 @@ h1 {
 .message-link:hover {
   color: #ae0c62;
 }
+
+@media screen and (max-width: 700px) {
+
+  header {
+    justify-content: flex-start;
+    padding: 5px 20px 0 20px;
+  }
+
+  .nav-logo {
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+  }
+
+  .navlink-container {
+    width: 80%;
+  }
+
+  h1 {
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .connect-me {
+    display: none;
+  }
+
+  .link-container {
+    justify-content: space-between;
+    padding-bottom: 5px;
+  }
+
+  .navlink-img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .profile-photo {
+    border-radius: 50%;
+  }
+
+  .Link {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+
+  header {
+    padding: 5px 20px 0 20px;
+  }
+
+  .nav-logo {
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+  }
+
+  h1 {
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .connect-me {
+    height: 60px;
+  }
+
+  .navlink-container {
+    width: 42%;
+  }
+
+  .link-container {
+    padding-bottom: 5px;
+  }
+
+  .navlink-img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .Link {
+    font-size: 20px;
+  }
+
+}
