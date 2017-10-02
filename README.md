@@ -1,4 +1,6 @@
-# HeadCount 2.0
+# ConnectME
+
+![User Interface](https://i.imgur.com/E4aPHt0.png)
 
 
 ## Overview
