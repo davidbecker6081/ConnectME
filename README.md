@@ -12,6 +12,7 @@ This was my personal project for module 3. I wanted to create an application tha
 - Firebase
 - Facebook Graph API
 - MomentJS
+- THUNK
 - Enzyme/Jest
 
 
