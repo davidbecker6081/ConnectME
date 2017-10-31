@@ -6,6 +6,14 @@
 ## Overview
 This was my personal project for module 3 at Turing School of Software and Design. I wanted to create an application that streamlined a few functionalities that Facebook already provided. The goal was to create a platform to search friends in a particular location and then message one particular friend or a group of friends in one location. A user should be able to login and logout, send and store messages to and from friends, and eventually, store groups of friends in particular locations. In this project, I implemented Firebase OAuth and database, used the Facebook Graph API, and tested with Enzyme/Jest. 
 
+## Set Up
+
+Fork this project
+
+Run `npm install` from the root directory
+
+Run `npm start` and visit localhost:8080 in your browser
+
 ## Stack: 
 
 - ReactJS/Redux
