@@ -4,7 +4,7 @@
 
 
 ## Overview
-This was my personal project for module 3 at Turing School of Software and Design. I wanted to create an application that streamlined a few functionalities that Facebook already provided, but in a rather user-unfriendly way. The goal was to create a platform to search friends in a particular location and then message one particular friend or a group of friends in one location. A user should be able to login and logout, send and store messages to and from friends, and eventually, store groups of friends in particular locations. In this project, I implemented Firebase OAuth and database, used the Facebook Graph API, and tested with Enzyme/Jest. 
+This was my personal project for module 3 at Turing School of Software and Design. I wanted to create an application that streamlined a few functionalities that Facebook already provided. The goal was to create a platform to search friends in a particular location and then message one particular friend or a group of friends in one location. A user should be able to login and logout, send and store messages to and from friends, and eventually, store groups of friends in particular locations. In this project, I implemented Firebase OAuth and database, used the Facebook Graph API, and tested with Enzyme/Jest. 
 
 ## Stack: 
 
@@ -84,3 +84,12 @@ A good project idea should:
 2: Project exhibits some gaps in the UX.
 
 1: Project exhibits inattention to the user experience.
+
+## Next Steps
+
+  - Refactor FriendList
+  - Error handling for no friends found at a location
+  - Fix Logout Functionality
+  - Make login dynamic (have to hardcode user token and id from facebook currently)
+  - Send a message to multiple people in a location at once
+  - Add google maps location
